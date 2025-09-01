@@ -99,9 +99,9 @@ function App() {
       </select>
       <div>
         {selectedCity && selectedState && selectedCountry && (
-          <span>
+          <p>
             You selected {selectedCity}, {selectedState}, {selectedCountry}
-          </span>
+          </p>
         )}
       </div>
     </div>
