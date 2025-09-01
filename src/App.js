@@ -101,7 +101,7 @@ function App() {
       <div>
         {selectedCity && (
           <p>
-            You selected:{" "}
+            You selected{" "}
             <span
               style={{ fontWeight: "bold", color: "black", fontSize: "20px" }}
             >
