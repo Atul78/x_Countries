@@ -46,7 +46,6 @@ function App() {
         setCities
       );
       setSelectedCity("");
-      
     }
   }, [selectedState, selectedCountry]);
 
@@ -99,19 +98,10 @@ function App() {
         ))}
       </select>
       <div>
-        {selectedCity && (
-          <p>
-            You selected{" "}
-            <span
-              style={{ fontWeight: "bold", color: "black", fontSize: "20px" }}
-            >
-              {selectedCountry}
-            </span>
-            ,{" "}
-            <span style={{ fontWeight: "bold", color: "grey" }}>
-              {selectedState}, {selectedCity}
-            </span>
-          </p>
+        {selectedCity && selectedState && selectedCountry && (
+          <h2>
+            You selected {selectedCity}, {selectedState}, {selectedCountry}
+          </h2>
         )}
       </div>
     </div>
