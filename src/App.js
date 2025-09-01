@@ -98,10 +98,19 @@ function App() {
         ))}
       </select>
       <div>
-        {selectedCity && selectedState && selectedCountry && (
-          <h3>
-            You selected {selectedCity}, {selectedState}, {selectedCountry}
-          </h3>
+        {selectedCity && (
+          <p>
+            You selected{" "}
+            <span
+              style={{ fontWeight: "bold", color: "black", fontSize: "20px" }}
+            >
+              {selectedCountry}
+            </span>
+            ,{" "}
+            <span style={{ fontWeight: "bold", color: "grey" }}>
+              {selectedState}, {selectedCity}
+            </span>
+          </p>
         )}
       </div>
     </div>
